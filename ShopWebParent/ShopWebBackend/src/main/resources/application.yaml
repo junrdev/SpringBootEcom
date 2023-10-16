@@ -4,3 +4,7 @@ server:
   servlet:
     context-path: /admin
 
+
+spring:
+  profiles:
+    active: dev

@@ -19,13 +19,51 @@
 <div class="container-fluid">
 
     <div>
-        <nav class="navbar navbar-expand navbar-dark">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <a class="navbar-brand" th:href="@{/}">
                 <img th:src="@{/images/shopmelogo-small.png}" alt="logo">
             </a>
 
-            <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
+            <div class="collapse navbar-collapse" id="topNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a th:href="@{/users}" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/categories}" class="nav-link">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/brands}" class="nav-link">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/products}" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/customers}" class="nav-link">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/shipping}" class="nav-link">Shipping</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/order}" class="nav-link">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/report}" class="nav-link">Reports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/articles}" class="nav-link">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/menus}" class="nav-link">Menus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a th:href="@{/settings}" class="nav-link">Settings</a>
+                    </li>
+                </ul>
             </div>
 
         </nav>
